@@ -12,7 +12,7 @@ into the KeePass2 (general CSV import).
 Run: 
 
 ```
-python convert.py --infile <infile>
+poetry run kpm-converter --infile <infile>
 ```
 
 This will produce several `.csv` files which can be directly imported 
