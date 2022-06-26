@@ -103,8 +103,6 @@ def convert(infile):
     logging.info("Will convert input file: %s...", infile)
     cred_records = open(infile, "rt").read()
     parsed_records: List[Section] = creds_file.parse_string(cred_records)
-    for el in parsed_records:
-        print(el)
     for section in parsed_records:
         if not section.credentials:
             continue
